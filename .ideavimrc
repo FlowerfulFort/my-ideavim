@@ -1,0 +1,29 @@
+set nu
+set scrolloff=5
+set hlsearch
+set incsearch
+set relativenumber
+set ignorecase
+set smartcase
+
+let mapleader = " "
+nnoremap <M-j> 5j
+nnoremap <M-k> 5k
+
+nnoremap <C-g> :NERDTreeToggle<CR>
+# nnoremap <D-Right> $
+# nnoremap <D-Left> ^
+# vnoremap <D-Right> $
+# vnoremap <D-Left> ^
+
+nnoremap <C-i> mzi <Space><Esc>`z
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
+
+set easymotion
+
+let g:highlightedyank_highlight_duration = -1
+
+imap jj <Esc>
